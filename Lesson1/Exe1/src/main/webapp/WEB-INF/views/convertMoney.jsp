@@ -17,7 +17,9 @@
     <span><input type="text" name="USD"></span>
     <br>
     <button>Convert</button>
-    <p>$${USD} convert into VND by ${total}</p>
+    <br>
+    <span>VND: </span>
+    <span>${total}</span>
 </form>
 </body>
 </html>
