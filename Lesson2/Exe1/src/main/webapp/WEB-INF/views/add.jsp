@@ -21,17 +21,12 @@
             </td>
         </tr>
         <tr>
+            <td>Condiments: </td>
             <td>
-                <input type="checkbox" name="condiments">Lettuce
-            </td>
-            <td>
-                <input type="checkbox" name="condiments">Tomatoes
-            </td>
-            <td>
-                <input type="checkbox" name="condiments">Mustard
-            </td>
-            <td>
-                <input type="checkbox" name="condiments">Sprouts
+                <input type="checkbox" name="condiments" value="Lettuce">Lettuce
+                <input type="checkbox" name="condiments" value="Tomatoes">Tomatoes
+                <input type="checkbox" name="condiments" value="Mustard">Mustard
+                <input type="checkbox" name="condiments" value="Sprouts">Sprouts
             </td>
         </tr>
     </table>

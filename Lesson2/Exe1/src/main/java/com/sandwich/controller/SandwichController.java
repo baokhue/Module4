@@ -4,6 +4,7 @@ import com.sandwich.model.Sandwich;
 import com.sandwich.service.ISandwichService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,12 +33,11 @@ public class SandwichController {
     }
 
     @PostMapping(value = "/add")
-    public ModelAndView add(@RequestParam int idBills, @RequestParam String condiments) {
-        Sandwich sandwich = new Sandwich(idBills, condiments);
-        sandwichService.save(sandwich);
-        ModelAndView modelAndView  = new ModelAndView("/list");
+    public String add(@RequestParam int idBills, @RequestParam String condiments, Model model) {
+        model.addAttribute("condiments", new String[] {"Lettuce", "Tomatoes", "Mustard", "Sprouts"});
+        model.addAttribute("sandwich", sandwichService.save(new Sandwich(idBills, condiments)));
         List<Sandwich> sandwichList = sandwichService.findAll();
-        modelAndView.addObject("sandwichList", sandwichList);
-        return modelAndView;
+        model.addAttribute("sandwichList", sandwichList);
+        return "/list";
     }
 }

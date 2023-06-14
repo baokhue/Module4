@@ -24,6 +24,6 @@ public class SandwichServiceImpl implements ISandwichService {
 
     @Override
     public boolean save(Sandwich sandwich) {
-        return false;
+        return sandwichList.add(sandwich);
     }
 }
