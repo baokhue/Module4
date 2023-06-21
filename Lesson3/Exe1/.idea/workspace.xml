@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2520c82a-96f2-4f9b-b789-5fab9dfb5b83" name="Changes" comment="" />
+    <list default="true" id="2520c82a-96f2-4f9b-b789-5fab9dfb5b83" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Lesson2/Exe2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson2/Exe2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exercise1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -34,6 +37,8 @@
       <option name="presentableId" value="Default" />
       <updated>1686579914368</updated>
       <workItem from="1686579915787" duration="88000" />
+      <workItem from="1687261765787" duration="15000" />
+      <workItem from="1687351810983" duration="72000" />
     </task>
     <servers />
   </component>
