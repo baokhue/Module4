@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        button {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+<h1>My new feed!</h1>
+<button>
+    <a th:href="@{/blog/create}">Create your new blog.</a>
+</button>
+<table th:each="blog, status: ${blogs}" >
+    <tr>
+        <td th:text="${status.count}"></td>
+    </tr>
+    <tr>
+        <td th:hidden="${blog.id}"></td>
+        <td>
+            <span style="
+                                    display:inline-block;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    max-width: 90ch;"
+                  th:text="${blog.content}" th:colspan="3">
+                                </span>
+            <h3 style="text-align: center" th:if="${blogs.isEmpty()}">
+                List is empty!
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button>
+                <a th:href="@{/blog/edit/__${blog.id}__}" >Edit</a>
+            </button>
+        </td>
+        <td>
+            <button>
+                <a th:href="@{/blog/delete/__${blog.id}__}">Delete</a>
+            </button>
+        </td>
+        <td>
+            <button>
+                <a th:href="@{/blog/detail/__${blog.id}__}">See more</a>
+            </button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

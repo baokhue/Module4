@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+
+    <style>
+        button {
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+<h1>Edit Blog</h1>
+<form th:object="${blog}" th:action="@{/blog/edit}" method="post">
+    <input th:value="${blog.id}"  th:field="*{id}" hidden>
+    <h3>Edit your content</h3>
+    <textarea type="text" th:field="*{content}" th:value="${blog.content}" cols="100" rows="7"> </textarea>
+    <br>
+    <button>Save!</button>
+</form>
+</body>
+</html>

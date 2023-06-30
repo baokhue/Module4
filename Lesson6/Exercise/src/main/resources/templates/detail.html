@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+
+    <style>
+        button {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+<h1>Blog</h1>
+<label>Content</label>
+<br>
+<p th:text="${blog.content}"></p>
+<button>
+    <a th:href="@{/blog}">Back!</a>
+</button>
+</body>
+</html>
