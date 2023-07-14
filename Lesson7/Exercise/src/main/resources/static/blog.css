@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    background-color: darkseagreen;
+}
+.background {
+    background-image: url("../v953-mynt-58.jpg");
+    height: 1000px;
+    width: auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-table {
+    margin: 30px;
+    padding: 30px 100px;
+    background: rgba(248,249,250,0.5);
+    border-radius: 10px;
+
+}
+
+.background-table-edit {
+    margin: 30px;
+    padding: 30px;
+    background: rgba(248,249,250,0.5);
+    border-radius: 10px;
+}
+
+#small-title {
+    font-weight: bold;
+}
+h3 {
+    text-align: center;
+}
