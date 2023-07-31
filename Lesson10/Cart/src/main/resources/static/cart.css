@@ -1,0 +1,39 @@
+.col {
+    margin-top: 20px;
+    padding: 0 110px;
+    border-radius: 12px;
+}
+
+.prdImg {
+
+}
+
+.prdName {
+    font-weight: bold;
+}
+
+.prdPrice {
+
+}
+
+.addCart {
+    float: right;
+}
+
+ion-icon {
+    font-size: 31px;
+    color: black;
+}
+
+.background {
+    background-image: url("../czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTMtcC0wMDA5YS14XzEuanBn.webp");
+    height: 1000px;
+    width: auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+

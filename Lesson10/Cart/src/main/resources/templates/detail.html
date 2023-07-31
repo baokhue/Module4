@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product's Detail</title>
+</head>
+<body>
+<div class="background">
+    <div class="header">
+        <nav class="navbar navbar-light" style="background-color: rgba(184, 205, 213, 0.3)">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/shop}">
+                    <ion-icon name="storefront-outline" style="font-size: 40px"></ion-icon>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!--content-->
+    <div class="container">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img th:src="@{'/' + ${product.img} + '.jpg'}" style="width: 200px; height: auto" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${product.name}"></h5>
+<!--                        <p class="card-text" th:text="${product.quantity}"></p>-->
+                        <strong class="card-text" th:text="${product.price}"></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--script bootstrap-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
